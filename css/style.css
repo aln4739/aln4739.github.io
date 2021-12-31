@@ -1,0 +1,229 @@
+/*!* CSS HEX *!*/
+/*--teal-blue: #2d728fff;*/
+/*--blue-munsell: #3b8ea5ff;*/
+/*--green-yellow-crayola: #f5ee9eff;*/
+/*--sandy-brown: #f49e4cff;*/
+/*--firebrick: #ab3428ff;*/
+
+/* Global Styles
+--------------------------------------------------*/
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    background: #ffffff;
+    margin: 0;
+    padding: 0;
+    font-family: "Consolas", sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    color: #fad532;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 100px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h1, h2 {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 600;
+    margin: 0;
+}
+
+h3 {
+    margin: 0;
+}
+
+.content-wrap {
+    max-width: 900px;
+    width: 85%;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+h3 + p {
+    font-style: italic;
+    margin: 0;
+}
+
+/* Profile
+--------------------------------------------------*/
+header {
+    background: #2d728f;
+    color: white;
+    text-align: center;
+}
+
+/* Education
+--------------------------------------------------*/
+.education {
+    background-image: url("../images/joanna-kosinska-1_CMoFsPfso-unsplash.jpg");
+    background-size: cover;
+    background-position: top right;
+}
+
+.education div section p {
+    width: 75%;
+}
+
+/* Work Experience
+--------------------------------------------------*/
+
+.work {
+    background: #f49e4c;
+}
+
+.job-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 20px;
+    margin: 50px 0;
+}
+
+.job-details {
+    margin-right: -10px;
+    border-right: solid;
+    min-width: 80%;
+    padding: 20px 20px 20px 0;
+}
+
+.work h3 ~ p {
+    margin: 0;
+}
+
+/* Projects
+--------------------------------------------------*/
+
+.projects {
+    background: #3b8ea5;
+    color: #ffffff;
+}
+
+.projects .btn {
+    color: white;
+    background: #b4340d;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.projects .btn:hover {
+    background: rgba(180, 52, 13, 0.8);
+}
+
+.project-item {
+    display: flex;
+    border-bottom: dashed;
+    padding: 25px 0;
+    align-items: center;
+}
+
+.project-item img {
+    flex: 1 1 auto;
+}
+
+.project-item div {
+    margin-right: 30px;
+    flex: 1 1 auto;
+}
+
+.project-item ul {
+    padding-inline-start: 20px;
+}
+
+.project-item:last-of-type {
+    border-bottom: none;
+}
+
+
+/* Contact Info
+--------------------------------------------------*/
+footer {
+    color: white;
+    background: #ab3428;
+    text-align: center;
+}
+
+.contact-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-list a {
+    padding: 15px;
+    display: inline-block;
+}
+
+/* Responsive
+--------------------------------------------------*/
+@media screen and (max-width: 1050px) {
+    header {
+        text-align: left;
+    }
+
+    h1 {
+        font-size: 75px;
+    }
+
+
+    .job-item {
+        display: block;
+    }
+
+    .job-details {
+        border-right: none;
+    }
+    
+
+    .project-item {
+        display: block;
+        justify-content: center;
+    }
+
+    .btn {
+        margin-bottom: 20px;
+    }
+
+    .project-item img {
+        display: block;
+        margin: auto;
+    }
+
+
+    footer {
+        text-align: left;
+    }
+
+    .contact-list {
+        display: block;
+        justify-content: initial;
+    }
+
+    .contact-list a {
+        padding: 5px;
+    }
+}
